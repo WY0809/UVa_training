@@ -37,3 +37,42 @@ int main(){
    }
    return 0;
 }
+/* 未通過
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, m, i = 1;
+    while (1) {
+        
+        cin >> n;
+        cin >> m;
+        int a[33];
+        a[1] = n;
+
+        while (a[i] != 1 && a[0] != 1 && m >= 1 && n >=1) {
+            if (a[i] % m == 0) {
+                a[i + 1] = a[i] / m;
+                i++;
+            }
+            else {
+                a[0] = 1;
+            }
+        }
+        if (a[0] == 1 || m == 0 || m==1) {
+            cout << "Boring!" << endl;
+            a[0] = 0;
+        }
+        else if (a[i] == 1) {
+            for (int j = 1; j <= i; j++) {
+                cout << a[j] << " ";
+            }
+            cout << endl;
+        }
+    }
+    return 0;
+}
+*/
+
