@@ -1,4 +1,4 @@
-//I got presentation error on this question at UVA online judge
+//In UVa10101 ,I got presentation error from UVA online judge
 //if someone know why,plz tell me,thanks
 
 #include <iostream>
