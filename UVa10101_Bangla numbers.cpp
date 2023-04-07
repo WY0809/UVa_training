@@ -1,6 +1,3 @@
-//In UVa10101 ,I got presentation error from UVA online judge
-//if someone know why,plz tell me,thanks
-
 #include <iostream>
 #include <string>
 using namespace std;
@@ -21,10 +18,10 @@ int main()
             
         }else if((Num.size()-1)/7 == 0){
             
-           printf( "%4d. ", i);
+           printf( "%4d.", i);
             for(int j =0;j<4;j++){
                if(num / units[j]!=0){
-                   cout <<num / units[j] <<" "<<unit[j]<<" ";
+                   cout <<" "<<num / units[j] <<" "<<unit[j];
                    num %= units[j];
                }
             }
@@ -32,30 +29,30 @@ int main()
             if(num == 0){
                 cout << endl;
             }else{
-                cout<<num<<endl;
+                cout<<" "<<num<<endl;
             }
             
         }else {
             
-           printf( "%4d. ", i);
+           printf( "%4d.", i);
             int temp = num /units[0];
             num %= units[0];
             for(int j =0;j<4;j++){
                if(temp / units[j]!=0){
-                   cout <<temp / units[j] <<" "<<unit[j]<<" ";
+                   cout <<" "<<temp / units[j] <<" "<<unit[j];
                    temp %= units[j];
                }
             }
             
             if(temp == 0){
-                cout<<unit[0]<<" ";
+                cout<<" "<<unit[0];
             }else{
-                cout<<temp<<" "<<unit[0]<<" ";
+                cout<<" "<<temp<<" "<<unit[0];
             }
             
             for(int j =0;j<4;j++){
                if(num / units[j]!=0){
-                   cout <<num / units[j] <<" "<<unit[j]<<" ";
+                   cout <<" "<<num / units[j] <<" "<<unit[j];
                    num %= units[j];
                }
             }
@@ -63,7 +60,7 @@ int main()
              if(num == 0){
                 cout << endl;
             }else{
-                cout<<num<<endl;
+                cout<<" "<<num<<endl;
             }
             
         }
