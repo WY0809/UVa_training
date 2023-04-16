@@ -1,3 +1,4 @@
+//使用zerojudge上別人的想法，C=A+B，A的每一位與B的每一位相加，若大於C的每一位則代表進位，如125+967=1092，5+7=12>2，2+6=8<9，1+9=10>0，3carry bits
 #include <iostream>
 
 using namespace std;
