@@ -25,7 +25,7 @@ int main()
             trees[tree]++;    
         }
         
-        for (const auto& n : trees) {
+        for (const auto &n : trees) {
             cout<< n.first<<" "; 
             printf("%.4f\n",n.second/count*100);
         }
