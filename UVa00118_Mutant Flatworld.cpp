@@ -33,14 +33,9 @@ int main()
         //依據指令做不同的事
         for(int i = 0;i<str.length();i++){
             if(str[i] == 'R'){
-                index++;
-                index %= 4;
+                index = (index + 1) % 4;
             }else if(str[i] == 'L'){
-                if(index == 0){
-                    index = 3;
-                }else{
-                    index--;
-                }
+                index = (index + 3) % 4;
             }else if(str[i] == 'F'){
                 //判斷現在的點有沒有標記
                 bool scent = true;
